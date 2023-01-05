@@ -1,0 +1,26 @@
+{
+  "name": "2.-igniting-our-app",
+  "version": "1.0.0",
+  "description": "Practice for namastey react live course",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jagrut-sharma/namastey-react-Ch-02.git"
+  },
+  "author": "Jagrut Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jagrut-sharma/namastey-react-Ch-02/issues"
+  },
+  "homepage": "https://github.com/jagrut-sharma/namastey-react-Ch-02#readme",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

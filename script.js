@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 const heading1 = React.createElement(
   "h1",
   {
@@ -10,8 +13,9 @@ const heading2 = React.createElement(
   "h2",
   {
     id: "title",
+    hello: "world",
   },
-  "Welcome to React"
+  "Welcome to React from parcel"
 );
 
 const container = React.createElement("div", {}, [heading1, heading2]);
@@ -20,5 +24,5 @@ const container = React.createElement("div", {}, [heading1, heading2]);
 // console.log(heading); // React Element => Object
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// * Used ReactDOM because DOM needs to be manipulated i.e. elements to be added there => the root will be created => the place where I want my react to run
+
 root.render(container);
