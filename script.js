@@ -57,13 +57,31 @@ const ele = (
 
 const HeaderEle = () => (
   <div>
+    <HeaderComponent />
+    <br></br>
     {ele}
     {/* {3 + 1} */}
     {/* {console.log("Hello")} */}
-    <h1 key="component-1">Hi, hope you are doing well</h1>
+    <br></br>
+    <h1 key="component-1">Hi, Welcome</h1>
     <h2 key="component-2">I am making my first component in React</h2>
     <h3 key="component-3">This is awesome and amazing.</h3>
   </div>
+);
+
+const HeaderComponent = () => (
+  <nav className="nav-container">
+    <div className="img-container img-logo">
+      <img className="img" src={require("./assets/namasteydev.png")} />
+    </div>
+    <form className="searchbar">
+      <input type="text" placeholder="Search..."></input>
+      <button type="submit">Search</button>
+    </form>
+    <div className="img-container img-user">
+      <img className="img" src={require("./assets/Sample_User_Icon.png")} />
+    </div>
+  </nav>
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
